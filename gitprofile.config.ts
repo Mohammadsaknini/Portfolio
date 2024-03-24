@@ -48,7 +48,7 @@ const CONFIG = {
             `Web application that offers versatile and user-friendly analytical tools
              for analyzing the latest trends through an interactive graphical user interface,
              while focusing on the analysis of the latest trends in the field of technology emerging
-             from ressearch papers and encyclopedic articles.
+             from research papers and encyclopedic articles.
              The application was developed using Python, Dash, Plotly and Nginx.`,
           imageUrl:
             'https://icons.veryicon.com/png/o/internet--web/common-work-social-mobile-terminals/analysis-trend.png',
@@ -63,7 +63,7 @@ const CONFIG = {
     imageURL: '',
   },
   social: {
-    linkedin: 'mohammad-saknini/',
+    linkedin: 'mohammad-saknini',
     twitter: '',
     mastodon: '',
     researchGate: '',
