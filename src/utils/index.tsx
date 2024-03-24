@@ -14,6 +14,7 @@ export const isDarkishTheme = (appliedTheme: string): boolean => {
     appliedTheme,
   );
 };
+import { SanitizedSkills } from '../interfaces/sanitized-config';
 
 type EventParams = {
   [key: string]: string;
@@ -82,7 +83,8 @@ export const getSanitizedConfig = (
       resume: {
         fileUrl: config?.resume?.fileUrl || '',
       },
-      skills: config?.skills || [],
+
+        skills: (config?.skills || []).map(skill => skill as unknown as SanitizedSkills),
       experiences:
         config?.experiences?.filter(
           (experience) =>
