@@ -133,7 +133,7 @@ export interface SanitizedThemeConfig {
 }
 export interface SanitizedSkills {
   title: string;
-  items: string[];
+  items: Array<string>;
 }
 
 export interface SanitizedConfig {
