@@ -32,7 +32,7 @@ const ExternalProjectCard = ({
                       })}
                     </h2>
                     <div className="avatar w-full h-full">
-                      <div className="w-24 h-24 mask mask-squircle mx-auto">
+                      <div className="w-24 h-24 mask mx-auto">
                         {skeleton({
                           widthCls: 'w-full',
                           heightCls: 'h-full',
@@ -68,10 +68,10 @@ const ExternalProjectCard = ({
 
   const renderExternalProjects = () => {
     return externalProjects.map((item, index) => (
-      <a
-        className="card shadow-lg compact bg-base-100 cursor-pointer"
+      <div
+        className="card shadow-lg compact bg-base-100"
         key={index}
-        href={item.link}
+        // href={item.link}
         onClick={(e) => {
           e.preventDefault();
 
@@ -85,7 +85,7 @@ const ExternalProjectCard = ({
             console.error(error);
           }
 
-          window?.open(item.link, '_blank');
+          // window?.open(item.link, '_blank');
         }}
       >
         <div className="p-8 h-full w-full">
@@ -98,7 +98,7 @@ const ExternalProjectCard = ({
                   </h2>
                   {item.imageUrl && (
                     <div className="avatar opacity-90">
-                      <div className="w-24 h-24 mask mask-squircle">
+                      <div className="w-24 h-24 mask ">
                         <LazyImage
                           src={item.imageUrl}
                           alt={'thumbnail'}
@@ -119,7 +119,7 @@ const ExternalProjectCard = ({
             </div>
           </div>
         </div>
-      </a>
+      </div>
     ));
   };
 
@@ -141,8 +141,8 @@ const ExternalProjectCard = ({
                     )}
                   </h5>
                 </div>
-                <div className="col-span-2">
-                  <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+                <div className="col-span-1">
+                  <div className="flex flex-wrap gap-6">
                     {loading ? renderSkeleton() : renderExternalProjects()}
                   </div>
                 </div>

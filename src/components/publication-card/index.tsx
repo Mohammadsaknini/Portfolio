@@ -130,13 +130,13 @@ const PublicationCard = ({
                       skeleton({ widthCls: 'w-40', heightCls: 'h-8' })
                     ) : (
                       <span className="text-base-content opacity-70">
-                        Publications
+                        Thesis
                       </span>
                     )}
                   </h5>
                 </div>
                 <div className="col-span-2">
-                  <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+                  <div className="gap-6 col-span-2">
                     {loading ? renderSkeleton() : renderPublications()}
                   </div>
                 </div>

@@ -131,6 +131,10 @@ export interface SanitizedThemeConfig {
   themes: Array<string>;
   customTheme: SanitizedCustomTheme;
 }
+export interface SanitizedSkills {
+  title: string;
+  items: string[];
+}
 
 export interface SanitizedConfig {
   github: SanitizedGithub;
@@ -138,7 +142,7 @@ export interface SanitizedConfig {
   seo: SanitizedSEO;
   social: SanitizedSocial;
   resume: SanitizedResume;
-  skills: Array<string>;
+  skills: Array<SanitizedSkills>;
   experiences: Array<SanitizedExperience>;
   educations: Array<SanitizedEducation>;
   certifications: Array<SanitizedCertification>;

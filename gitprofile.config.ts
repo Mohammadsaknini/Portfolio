@@ -20,145 +20,164 @@ const CONFIG = {
         limit: 8, // How many projects to display.
         exclude: {
           forks: false, // Forked projects will not be displayed if set to true.
-          projects: [], // These projects will not be displayed. example: ['arifszn/my-project1', 'arifszn/my-project2']
+          projects: ['MohammadSakhnini/Portfolio','MohammadSakhnini/Parkhaus-SE1'], // These projects will not be displayed. example: ['arifszn/my-project1', 'arifszn/my-project2']
         },
       },
       manual: {
         // Properties for manually specifying projects
-        projects: ['arifszn/gitprofile', 'arifszn/pandora'], // List of repository names to display. example: ['arifszn/my-project1', 'arifszn/my-project2']
+        projects: [], // List of repository names to display. example: ['arifszn/my-project1', 'arifszn/my-project2']
       },
     },
     external: {
-      header: 'My Projects',
+      header: 'Projects',
       // To hide the `External Projects` section, keep it empty.
       projects: [
         {
-          title: 'Project Name',
+          title: '',
           description:
-            'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod, nunc ut.',
+            `Full stack cross-platform application connecting users based on preferences, location and skills
+             and presenting them with challenges via specialized joysticks to compete with one another.
+             The application was developed using C#, Xamarin, .Net, and AWS.`,
           imageUrl:
-            'https://img.freepik.com/free-vector/illustration-gallery-icon_53876-27002.jpg',
-          link: 'https://example.com',
+            'https://cdn-icons-png.freepik.com/512/9663/9663087.png',
+          link: '',
         },
         {
-          title: 'Project Name',
+          title: '',
           description:
-            'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod, nunc ut.',
+            `Web application that offers versatile and user-friendly analytical tools
+             for analyzing the latest trends through an interactive graphical user interface,
+             while focusing on the analysis of the latest trends in the field of technology emerging
+             from ressearch papers and encyclopedic articles.
+             The application was developed using Python, Dash, Plotly and Nginx.`,
           imageUrl:
-            'https://img.freepik.com/free-vector/illustration-gallery-icon_53876-27002.jpg',
-          link: 'https://example.com',
+            'https://icons.veryicon.com/png/o/internet--web/common-work-social-mobile-terminals/analysis-trend.png',
+          link: '',
         },
       ],
     },
   },
   seo: {
-    title: 'Portfolio of Ariful Alam',
-    description: '',
+    title: 'Portfolio of Mohammad Saknini',
+    description: 'Mohammad Saknini - Computer Scientist and a Machine Learning Engineer',
     imageURL: '',
   },
   social: {
-    linkedin: 'ariful-alam',
-    twitter: 'arif_szn',
-    mastodon: 'arifszn@mastodon.social',
+    linkedin: 'mohammad-saknini/',
+    twitter: '',
+    mastodon: '',
     researchGate: '',
     facebook: '',
     instagram: '',
     youtube: '', // example: 'pewdiepie'
     dribbble: '',
     behance: '',
-    medium: 'arifszn',
-    dev: 'arifszn',
+    medium: '',
+    dev: '',
     stackoverflow: '', // example: '1/jeff-atwood'
     skype: '',
     telegram: '',
-    website: 'https://www.arifszn.com',
+    website: '',
     phone: '',
-    email: 'arifulalamszn@gmail.com',
+    email: 'mohammadsakhnini99@gmail.com',
   },
   resume: {
     fileUrl:
-      'https://www.w3.org/WAI/ER/tests/xhtml/testfiles/resources/pdf/dummy.pdf', // Empty fileUrl will hide the `Download Resume` button.
+      '', // Empty fileUrl will hide the `Download Resume` button.
   },
   skills: [
-    'PHP',
-    'Laravel',
-    'JavaScript',
-    'React.js',
-    'Node.js',
-    'Nest.js',
-    'MySQL',
-    'PostgreSQL',
-    'Git',
-    'Docker',
-    'PHPUnit',
-    'CSS',
-    'Antd',
-    'Tailwind',
+    {
+      'title': "Programming Languages",
+      'items': ["Python", "C#", "Java", "SQL", "Javascript",
+      "Dash", "Flask", ".Net", "Xamrin", "AWS", "Git", "SonarQube", "Jenkins", "Nginx",
+      "Plotly", "Pandas", "Scikit-Learn", "Tensorflow", "Keras", "Pytorch","Spacy", "Gensim"
+    ]
+    },
   ],
   experiences: [
     {
-      company: 'Company Name',
-      position: 'Position',
-      from: 'September 2021',
-      to: 'Present',
-      companyLink: 'https://example.com',
+      company: 'Fraunhofer Institute for Technological Trend Analysis INT',
+      position: 'Data Scientist',
+      from: 'Oct 2022',
+      to: 'present',
+      companyLink: 'https://www.int.fraunhofer.de/',
     },
     {
-      company: 'Company Name',
-      position: 'Position',
-      from: 'July 2019',
-      to: 'August 2021',
-      companyLink: 'https://example.com',
+      company: 'Ayl GMBH',
+      position: 'Full Stack Developer',
+      from: 'Dec 2021',
+      to: 'Aug 2022',
+      companyLink: '',
     },
-  ],
-  certifications: [
     {
-      name: 'Lorem ipsum',
-      body: 'Lorem ipsum dolor sit amet',
-      year: 'March 2022',
-      link: 'https://example.com',
+      company: 'E&H GmbH',
+      position: 'Data Analyst',
+      from: 'Sep 2021',
+      to: 'Nov 2021',
+      companyLink: '',
+    },
+    {
+      company: 'Whitesheep-IT',
+      position: 'Intern',
+      from: 'Jul 2020',
+      to: 'Aug 2020',
+      companyLink: 'https://whitesheep-it.de/',
+    },
+    {
+      company: 'DXC.technology',
+      position: 'Intern',
+      from: 'Feb 2019',
+      to: 'March 2019',
+      companyLink: 'https://www.dxcfds.com/',
     },
   ],
+  // certifications: [ Cisco, Beruflicher abschluss etc..
+  //   {
+  //     name: 'Lorem ipsum',
+  //     body: 'Lorem ipsum dolor sit amet',
+  //     year: 'March 2022',
+  //     link: 'https://example.com',
+  //   },
+  // ],
   educations: [
     {
-      institution: 'Institution Name',
-      degree: 'Degree',
-      from: '2015',
-      to: '2019',
+      institution: 'Hochschule Bonn-Rhein-Sieg',
+      degree: 'Masters of Science in Computer Science',
+      from: 'Sep 2023',
+      to: 'Present',
     },
     {
-      institution: 'Institution Name',
-      degree: 'Degree',
-      from: '2012',
-      to: '2014',
+      institution: 'Hochschule Bonn-Rhein-Sieg',
+      degree: 'Bachelor of Science in Computer Science',
+      from: 'Sep 2020',
+      to: 'Sep 2023',
+    },
+    {
+      institution: 'Heinrich-Hertz-Europakolleg',
+      degree: 'High School Degree',
+      from: 'Sep 2016',
+      to: 'Jul 2020',
     },
   ],
   publications: [
     {
-      title: 'Publication Title',
+      title: 'Utilizing the Power of Deep Learning to Evaluate Wikipedia Content',
       conferenceName: '',
-      journalName: 'Journal Name',
-      authors: 'John Doe, Jane Smith',
-      link: 'https://example.com',
-      description:
-        'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.',
-    },
-    {
-      title: 'Publication Title',
-      conferenceName: 'Conference Name',
       journalName: '',
-      authors: 'John Doe, Jane Smith',
-      link: 'https://example.com',
+      authors: 'Mohammad Saknini',
+      link: 'https://drive.google.com/file/d/1bHl762OjHV-uwtlG-RcfK6Q8wUCvJzUX/view?usp=sharing',
       description:
-        'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.',
+        `Implementation of a machine learning model that evaluates the quality of Wikipedia articles using deep learning 
+        techniques based on a varity of features that take into considration not only the textual content but
+        rather the structure and history of the article.`
     },
   ],
   // Display articles from your medium or dev account. (Optional)
-  blog: {
-    source: 'dev', // medium | dev
-    username: 'arifszn', // to hide blog section, keep it empty
-    limit: 2, // How many articles to display. Max is 10.
-  },
+  // blog: {
+  //   source: 'dev', // medium | dev
+  //   username: 'arifszn', // to hide blog section, keep it empty
+  //   limit: 2, // How many articles to display. Max is 10.
+  // },
   googleAnalytics: {
     id: '', // GA3 tracking id/GA4 tag id UA-XXXXXXXXX-X | G-XXXXXXXXXX
   },
@@ -168,11 +187,11 @@ const CONFIG = {
     snippetVersion: 6,
   },
   themeConfig: {
-    defaultTheme: 'lofi',
+    defaultTheme: 'Dim',
 
     // Hides the switch in the navbar
     // Useful if you want to support a single color mode
-    disableSwitch: false,
+    disableSwitch: true,
 
     // Should use the prefers-color-scheme media-query,
     // using user system preferences, instead of the hardcoded defaultTheme
@@ -235,7 +254,7 @@ const CONFIG = {
       class="text-primary" href="https://github.com/arifszn/gitprofile"
       target="_blank"
       rel="noreferrer"
-    >GitProfile</a> and ❤️`,
+    >GitProfile</a>`,
 
   enablePWA: true,
 };
