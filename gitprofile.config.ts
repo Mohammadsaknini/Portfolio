@@ -87,10 +87,11 @@ const CONFIG = {
   },
   skills: [
     {
-      'title': "Programming Languages",
+      'title': "Skills",
       'items': ["Python", "C#", "Java", "SQL", "Javascript",
       "Dash", "Flask", ".Net", "Xamrin", "AWS", "Git", "SonarQube", "Jenkins", "Nginx",
-      "Plotly", "Pandas", "Scikit-Learn", "Tensorflow", "Keras", "Pytorch","Spacy", "Gensim"
+      "Plotly", "Pandas", "Polars", "Scikit-Learn", "Tensorflow", "Keras", "Pytorch", "Spacy", "Gensim",
+      "Langchain", "Gradient Boosting Trees", 
     ]
     },
   ],
