@@ -17,9 +17,9 @@ const CONFIG = {
       mode: 'automatic', // Mode can be: 'automatic' or 'manual'
       automatic: {
         sortBy: 'stars', // Sort projects by 'stars' or 'updated'
-        limit: 8, // How many projects to display.
+        limit: 6, // How many projects to display.
         exclude: {
-          forks: false, // Forked projects will not be displayed if set to true.
+          forks: true, // Forked projects will not be displayed if set to true.
           projects: ['MohammadSakhnini/Portfolio','MohammadSakhnini/Parkhaus-SE1'], // These projects will not be displayed. example: ['arifszn/my-project1', 'arifszn/my-project2']
         },
       },
@@ -83,7 +83,7 @@ const CONFIG = {
   },
   resume: {
     fileUrl:
-      'https://drive.google.com/file/d/1kB8Qw8xTFvNB86j7Lu2Mw1U1tb_fytly/view?usp=sharing', // Empty fileUrl will hide the `Download Resume` button.
+      'https://drive.google.com/file/d/1D3UGEfmPtFMzfnpw-ePeoFKy6JX38X9n/view?usp=drive_link', // Empty fileUrl will hide the `Download Resume` button.
   },
   skills: [
     {
@@ -91,7 +91,7 @@ const CONFIG = {
       'items': ["Python", "C#", "Java", "SQL", "Javascript",
       "Dash", "Flask", ".Net", "Xamrin", "AWS", "Git", "SonarQube", "Jenkins", "Nginx",
       "Plotly", "Pandas", "Polars", "Scikit-Learn", "Tensorflow", "Keras", "Pytorch", "Spacy", "Gensim",
-      "Langchain", "Gradient Boosting Trees", 
+      "Langchain", "Gradient Boosting Trees", "HPC Clusters", "Linux", "Docker"
     ]
     },
   ],
@@ -145,7 +145,7 @@ const CONFIG = {
       institution: 'Hochschule Bonn-Rhein-Sieg',
       degree: 'Masters of Science in Computer Science',
       from: 'Sep 2023',
-      to: 'Present',
+      to: 'Sep 2025',
     },
     {
       institution: 'Hochschule Bonn-Rhein-Sieg',
@@ -166,7 +166,7 @@ const CONFIG = {
       conferenceName: '',
       journalName: '',
       authors: 'Mohammad Saknini',
-      link: 'https://drive.google.com/file/d/1bHl762OjHV-uwtlG-RcfK6Q8wUCvJzUX/view?usp=sharing',
+      link: 'https://github.com/Mohammadsaknini/WikipediaTools/blob/main/Thesis.pdf',
       description:
         `Implementation of a machine learning model that evaluates the quality of Wikipedia articles using deep learning 
         techniques based on a varity of features that take into considration not only the textual content but
