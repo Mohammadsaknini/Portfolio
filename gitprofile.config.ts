@@ -172,6 +172,17 @@ const CONFIG = {
         techniques based on a varity of features that take into considration not only the textual content but
         rather the structure and history of the article.`
     },
+      {
+      title: 'Semantic Embeddings  for Literature Discovery: An AI-Based Alternative to Query-Based Search',
+      conferenceName: '',
+      journalName: '',
+      authors: 'Mohammad Saknini',
+      link: 'https://github.com/Mohammadsaknini/WikipediaTools/blob/main/Thesis.pdf',
+      description:
+        `A semantic search framework (PaperSeek) designed to enhance large-scale literature discovery by using research questions,
+         domain-relevant context, synthetic document generation, and active learning-based reranking. Evaluations have shown that PaperSeek
+         can boost up the recall by up to 15 percentage points when compared to traditional keyword-base search methods.`
+    },
   ],
   // Display articles from your medium or dev account. (Optional)
   // blog: {
